@@ -1,0 +1,38 @@
+# Thulium AI Agent Backend
+
+Gotowa paczka backendu do wrzucenia na GitHub i wdrożenia na Render.com.
+
+## Render.com
+
+Ustawienia:
+
+- Environment: `Node`
+- Build Command: `npm install && npm run build`
+- Start Command: `npm start`
+- Health Check Path: `/health`
+
+Jeśli `package.json` jest w głównym katalogu repozytorium, zostaw `Root Directory` puste.
+Jeśli wrzucasz ten katalog jako podfolder, ustaw `Root Directory` na nazwę tego podfolderu.
+
+## Environment Variables w Render
+
+Ustaw w Render, nie w GitHub:
+
+```env
+NODE_ENV=production
+THULIUM_BASE_URL=https://eliteexpertclub.thulium.com
+THULIUM_API_USER=CHATGPT
+THULIUM_API_PASSWORD=Test1234
+OPENAI_API_KEY=twój_klucz_openai
+OPENAI_MODEL=gpt-4.1-mini
+EXTENSION_API_KEY=długi_losowy_klucz_do_wtyczki
+WEBHOOK_BASIC_USER=thulium_webhook
+WEBHOOK_BASIC_PASSWORD=długie_hasło_webhooka
+```
+
+## Endpointy
+
+- `GET /health`
+- `POST /api/test-thulium`
+- `POST /api/generate-reply`
+- `POST /webhooks/thulium`
