@@ -1,0 +1,14 @@
+AUDIT REPORT - thulium-bot-ticket-agent-login-v1.1.1
+
+[OK] node --check server.js
+[OK] version marker
+[OK] no bare route agentLoginOverride
+[OK] send route accepts agentLogin
+[OK] payload uses resolveAgentLogin override
+[OK] npm install
+[OK] local /health runtime
+[OK] runtime stderr empty
+
+Fixed: ReferenceError agentLoginOverride is not defined
+Route /api/ticket-send-final passes req.body.agentLogin into sendFinal().
+Health route uses fallbackAgentLogin(), not agentLoginOverride.
