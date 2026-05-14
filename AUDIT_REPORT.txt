@@ -1,0 +1,7 @@
+audited version: True
+audited route: True
+old route call absent: True
+audited sender: True
+global audited endpoints: True
+no undefined old endpoint in health: True
+node --check: OK
