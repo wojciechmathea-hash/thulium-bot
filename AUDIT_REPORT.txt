@@ -1,8 +1,0 @@
-AUDIT REPORT - thulium-bot-ticket-agent-login-v1.1.0
-
-[OK] node --check server.js
-[OK] exact PDF payload: body string + body_type + user_login
-[OK] ticket-send-final accepts agentLogin
-[OK] /api/agents added
-[OK] /api/agent-resolve added
-[OK] health exposes perUserAgentLogin=true
