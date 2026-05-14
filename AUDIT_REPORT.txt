@@ -1,0 +1,17 @@
+AUDIT REPORT - thulium-bot-ticket-clean-v1.0.1
+
+[OK] node --check server.js
+[OK] version marker
+[OK] sender marker
+[OK] exact PDF payload string
+[OK] no structured body object payload
+[OK] old audited sender removed
+
+First send payload is exactly:
+{
+  "body": "treść",
+  "body_type": "PLAIN",
+  "user_login": "CHATGPT"
+}
+
+Note: local /health runtime was not executed because dependencies are installed by Render during npm install; syntax and code-shape checks passed.
