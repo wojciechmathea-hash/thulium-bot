@@ -1,0 +1,8 @@
+AUDIT REPORT - thulium-bot-random-open-ticket-v1.2.2
+
+[OK] node --check server.js
+[OK] version marker
+[OK] default queue names present
+[OK] ticket queue API used
+[OK] candidate queue filter exists
+[OK] health exposes randomQueueNames
