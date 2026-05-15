@@ -1,8 +1,0 @@
-AUDIT REPORT - thulium-bot-random-open-ticket-v1.2.1
-
-[OK] node --check server.js
-[OK] manifest version marker
-[OK] unfiltered tickets attempted first
-[OK] deep extraction exists
-[OK] risky status_id filter last
-[OK] loose fallback exists
